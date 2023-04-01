@@ -1,8 +1,9 @@
-package com.xxd.codeexecutionflow.executionflow.base1;
+package com.xxd.codeexecutionflow.executionflow.base1.service.build;
 
 import com.xxd.codeexecutionflow.executionflow.base1.platform.feature.BaseFeature;
 import com.xxd.codeexecutionflow.executionflow.base1.platform.build.ComponentBuilder;
 import com.xxd.codeexecutionflow.executionflow.base1.platform.context.BaseContext;
+import com.xxd.codeexecutionflow.executionflow.base1.service.TestInfo;
 
 public class TestComponentBuilder implements ComponentBuilder<TestInfo> {
     @Override
