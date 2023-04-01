@@ -5,10 +5,18 @@ import com.xxd.codeexecutionflow.executionflow.base1.platform.build.ComponentBui
 import com.xxd.codeexecutionflow.executionflow.base1.platform.context.BaseContext;
 import com.xxd.codeexecutionflow.executionflow.base1.platform.exception.BaseBusinessException;
 import com.xxd.codeexecutionflow.executionflow.base1.platform.feature.BaseFeature;
+import com.xxd.codeexecutionflow.executionflow.base1.service.context.TestContext;
 
 import java.util.List;
 
 public class TestService extends AbstractBuilderProcess<TestVO,TestVO> {
+
+    public TestVO test() throws Exception {
+        TestContext testContext = new TestContext();
+        TestVO testVO = execute(testContext);
+        return testVO;
+    }
+
     @Override
     public void preProcess(BaseContext baseContext) throws BaseBusinessException {
 
